@@ -6,6 +6,7 @@
 }
 html {
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 /* 
 1. tu ngoai vao trong
@@ -29,6 +30,13 @@ html {
     margin-left: -8px;
     margin-right: -8px;
 }
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
 .col {
     float: left;
     padding-left: 8px;
@@ -38,12 +46,26 @@ html {
     width: calc(100% / 3 );
 }
 
+.mt-8 {
+margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+    }
+
 .col-half {
     width: 50%;
 }   
 
+.col-full {
+    width: 100%;
+}
 .text-white{
     color:#fff !important;
+}
+.pull-right {
+    float: right;
 }
 #header{
 position: fixed;
@@ -52,6 +74,7 @@ left: 0;
 right: 0;
 height: 46px; 
 background-color: black;
+width: 100%;
 }
 
 #nav {
@@ -136,6 +159,7 @@ margin-top: 46px;
 padding-top: 50%;
 background: url('./img/backgrounds/slider1.jpg') top center / cover no-repeat;
 position: relative;
+
 
 }
 
@@ -290,19 +314,21 @@ margin-bottom: 48px;
     line-height: 0.4 ;
 }
 
-.place-buy-btn{
+.btn{
  
     color: #fff;
     background-color: #000;
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
-    margin-top:  15px;;
+    margin-top:  15px;
+    border: none;
 
 }
-.place-buy-btn:hover {
+.btn:hover {
     color: #000;
     background-color: #ccc; 
+    cursor: pointer;
 }
 
 
@@ -395,8 +421,50 @@ padding: 16px;
     color: rgb(24, 91, 199);
 
 }
+
+
+/* contact form */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    font-size: 15px; 
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;  
+    width: 100%;
+    
+}
+
+/* maps section */
+/* .map-setion {
+    width: 100%;
+} */
 /* Footer section  */
 
 #footer{
+padding: 64px 16px;
+text-align: center;
 
+}
+
+#footer .social-list {
+ 
+    font-size:24px ;
+}
+
+#footer .social-list a {
+    color: rgb(68, 58, 58);
+    text-decoration: none;
+}
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
 }

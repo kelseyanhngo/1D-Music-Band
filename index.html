@@ -7,31 +7,22 @@
     <link rel="stylesheet" href="index.css"> </link>
     <link rel="stylesheet" href="./font/themify-icons/themify-icons.css"> </link>
     <title>One Direction</title>
+    <link rel="icon" href="./img/backgrounds/slider1.jpg"> 
 </head>
 <body>
     <div id="main"> 
 
+        <!-- this is a comment -->
 
             <div id="header">
                 <!-- Begin nav -->
                 <div id="nav">
                     <ul id="nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Band</a></li>
-                        <li><a href="">Tour</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li>
-                            <a href="#">
-                                More 
-                            <i class="nav-arrow-down ti-angle-down"> </i>
-                        </a>
-                            <ul class="subnav">
-                                <li><a href="" > Merchandise</a></li>
-                                <li><a href="" > Extras</a></li>
-                                <li><a href="" > Media</a></li>
-                            </ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#band">Band</a></li>
+                        <li><a href="#tour">Tour</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         
-                        </li>
                     </ul>
                     <!-- End Navigation -->
 
@@ -56,7 +47,7 @@
             </div>
             <div id="content">
                 <!-- About Section  -->
-                <div class="content-section">
+                <div id = "band" class="content-section">
                     <h2 class="section-heading"> The Band </h2>
                     <p class="section-subheading"> We love music and we love Kelsey!!!   </p>
                     <p class="about-content">One Direction, often shortened to 1D, are an English-Irish pop boy band formed in London, England in 2010. The group are composed of Niall Horan, Liam Payne, Harry Styles and Louis Tomlinson; former member Zayn Malik departed from the group in March 2015.
@@ -95,9 +86,9 @@
                 </div>
                 </div>
                 <!-- end about section --> 
-
+                <br>  <br>  <br> 
                 <!-- Tour section -->
-                <div class="tour-section"> 
+                <div id= "tour" class="tour-section"> 
                     
                           <div class="content-section">
                             <h2 class="section-heading text-white"> Tour Dates </h2>
@@ -117,7 +108,7 @@
                                         <h3 class="place-heading"> New York </h3>
                                         <p class="place-time">Fri 27 Nov 2016</p>
                                         <p class="place-description">I lov it :) </p>
-                                        <button class="place-buy-btn js-buy-tickets"> Buy Tickets</button>
+                                        <button class="btn js-buy-tickets"> Buy Tickets</button>
                                     </div>
                                 </div>
 
@@ -127,7 +118,7 @@
                                         <h3 class="place-heading"> Ho Chi Minh City </h3>
                                         <p class="place-time">Fri 27 Nov 2017</p>
                                         <p class="place-description">I lov it :) </p>
-                                        <button class="place-buy-btn js-buy-tickets"> Buy Tickets</button>
+                                        <button class="btn js-buy-tickets"> Buy Tickets</button>
                                     </div>
                                 </div>
 
@@ -137,7 +128,7 @@
                                         <h3 class="place-heading"> Ottawa </h3>
                                         <p class="place-time">Fri 27 Nov 2018</p>
                                         <p class="place-description">I lov it :) </p>
-                                        <button class="place-buy-btn js-buy-tickets"> Buy Tickets</button>
+                                        <button class="btn js-buy-tickets"> Buy Tickets</button>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -148,15 +139,52 @@
 
 
                 </div>
-
+                <br>  <br> <br> 
                 <!-- Contact -->
-                <div class="content-section">
+                <div id="contact" class="content-section" style="margin-bottom: 500px;">
                     <h2 class="section-heading"> Contact</h2>
                     <p class="section-subheading"> Wanna say something to us?   </p>
                    
+                  <div class="row contact-content">
+                      <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"> Chicago, US </i></p>
+                        <p><i class="ti-mobile"> Phone:  (+84) 358 859 620 </i></p>
+                        <p><i class="ti-email"> Email: weLoveKelsey@gmail.com </i></p>
+                      </div>
+                      <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" required id="" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="text" name="" required id="" placeholder="Email" class="form-control">
+                                </div>
+                               
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" required id="" placeholder="Messages" class="form-control">
+                                </div>
+                            </div>
+                            <input class="pull-right btn mt-16" type="submit" value="SEND">
+                        </form>
+                      </div>
+                  </div>
+                  <!-- end contact section --> 
+                
                     </div>
-            <div id="footer">
-
+            
+            <id id="footer">
+                <div class="social-list">
+                    <a href=""><i class="ti-facebook"> </i></a>
+                    <a href=""><i class="ti-instagram"> </i></a>
+                    <a href=""><i class="ti-youtube"> </i></a>
+                    <a href=""><i class="ti-pinterest"> </i></a>
+                    <a href=""><i class="ti-twitter"> </i></a>
+                    <a href=""><i class="ti-linkedin"> </i></a>
+                </div>
+            </id>
 
             </div>
 
